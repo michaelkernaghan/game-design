@@ -1,0 +1,22 @@
+{
+  "dubious_questions": [
+    {
+      "question": "In tournament play with time limits, what is the recommended lead in points before attempting a triple peel?",
+      "questionId": 0,
+      "timestamp": "2024-12-25T18:39:06.106Z",
+      "category": "Tournament and Competition"
+    },
+    {
+      "question": "In the standard opening, what is the recommended counter to the 'Duffer tice'?",
+      "questionId": 4,
+      "timestamp": "2024-12-25T18:59:36.709Z",
+      "category": "Strategy and Tactics"
+    },
+    {
+      "question": "According to Wylie, what is the recommended position for ball U in the standard opening?",
+      "questionId": 2,
+      "timestamp": "2024-12-26T00:03:24.125Z",
+      "category": "Strategy and Tactics"
+    }
+  ]
+}

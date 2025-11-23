@@ -1,0 +1,25 @@
+{
+  "name": "critical-theory-quiz",
+  "version": "1.0.0",
+  "description": "A quiz application for art theory",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "node test-quiz.js && node tests/citation-test.js",
+    "build:reference": "node scripts/build-reference.js",
+    "prebuild": "npm run build:reference",
+    "validate:refs": "node scripts/validate-references.js",
+    "test:citations": "node tests/citation-test.js",
+    "backup": "node scripts/backup-questions.js",
+    "prestart": "npm run backup",
+    "merge": "node scripts/merge-backups.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "puppeteer": "^23.11.1"
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LLM Movie Quiz Competition</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="start-screen" class="screen">
+        <h1>LLM Movie Quiz Competition</h1>
+        <button id="start-button">Start Competition</button>
+    </div>
+
+    <div id="quiz-screen" class="screen" style="display:none">
+        <div id="quiz-header">
+            <div id="current-llm"></div>
+            <div id="question-counter"></div>
+            <div id="timer">10</div>
+        </div>
+        
+        <div id="control-panel">
+            <button id="stop-button">Stop Competition</button>
+        </div>
+        
+        <div id="question-container">
+            <div id="question-text"></div>
+            <div id="answers-grid"></div>
+        </div>
+    </div>
+
+    <div id="results-screen" class="screen" style="display:none">
+        <h2>Competition Results</h2>
+        <div id="llm-stats"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html> 

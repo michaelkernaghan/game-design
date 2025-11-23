@@ -1,0 +1,43 @@
+{
+  "name": "croquet-quiz",
+  "version": "1.0.0",
+  "description": "An interactive quiz application for testing knowledge of croquet history, rules, and strategy",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "node scripts/test-quiz.js && node tests/citation-test.js",
+    "build:reference": "node scripts/build-reference.js",
+    "prebuild": "npm run build:reference",
+    "validate:refs": "node scripts/validate-references.js",
+    "test:citations": "node tests/citation-test.js",
+    "backup": "node scripts/backup-questions.js",
+    "prestart": "npm run backup",
+    "merge": "node scripts/merge-backups.js"
+  },
+  "keywords": [
+    "croquet",
+    "quiz",
+    "sports",
+    "education",
+    "history",
+    "rules",
+    "strategy"
+  ],
+  "author": "Michael Kernaghan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michaelkernaghan/LLM-Croquet-Quiz"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "puppeteer": "^23.11.1"
+  },
+  "type": "module"
+}
