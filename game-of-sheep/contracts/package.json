@@ -1,0 +1,18 @@
+{
+  "name": "sheep_contracts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@taqueria/plugin-taquito": "^0.22.2"
+  },
+  "devDependencies": {
+    "@taqueria/plugin-ligo": "^0.22.2"
+  }
+}
